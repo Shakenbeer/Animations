@@ -21,7 +21,10 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".biathlon.BiathlonActivity" android:label="Biathlon Target"/>
+        <activity
+            android:name=".biathlon.BiathlonActivity"
+            android:label="Biathlon Target" />
+        <activity android:name=".zubko.ZubkoActivity"></activity>
     </application>
 
 </manifest>
