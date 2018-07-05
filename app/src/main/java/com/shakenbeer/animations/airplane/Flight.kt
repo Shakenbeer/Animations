@@ -18,6 +18,7 @@ class Flight @JvmOverloads constructor(
 
     private val h = HEIGHT_DP.toPx
     private val color: Int
+    private val flightDuration: Int
     private val linePaint = Paint()
     private val planeBitmap: Bitmap
     private val planePaint = Paint()
@@ -29,6 +30,13 @@ class Flight @JvmOverloads constructor(
         val a = context.theme.obtainStyledAttributes(attrs, R.styleable.Flight, 0, 0)
         try {
             color = a.getColor(R.styleable.Flight_color, Color.BLACK)
+            flightDuration = a.getInt(R.styleable.Flight_duration, DEFAULT_DURATION_MILLIS).let {
+                when {
+                    it < MIN_DURATION_MILLIS -> MIN_DURATION_MILLIS
+                    it > MAX_DURATION_MILLIS -> MAX_DURATION_MILLIS
+                    else -> it
+                }
+            }
         } finally {
             a.recycle()
         }
@@ -51,7 +59,7 @@ class Flight @JvmOverloads constructor(
         super.onLayout(changed, left, top, right, bottom)
         anim = ValueAnimator.ofFloat(-planeBitmap.width.toFloat(),
                 (width + planeBitmap.width).toFloat()).apply {
-            duration = 2000
+            duration = flightDuration.toLong()
             interpolator = planeInterpolator
             repeatMode = RESTART
             repeatCount = INFINITE
@@ -77,6 +85,9 @@ class Flight @JvmOverloads constructor(
     companion object {
         private const val HEIGHT_DP = 48
         private const val MIN_WIDTH_DP = 48
+        private const val MIN_DURATION_MILLIS = 300
+        private const val DEFAULT_DURATION_MILLIS = 2000
+        private const val MAX_DURATION_MILLIS = 4000
 
         private val Int.toPx: Int
             get() = (this * Resources.getSystem().displayMetrics.density).toInt()
