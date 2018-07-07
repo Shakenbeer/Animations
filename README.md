@@ -35,6 +35,7 @@ And, don't forget to set software layer type to your view, in other case PorterD
 
 ```kotlin
     private val planeBitmap: Bitmap
+    private val planePaint = Paint()
     //...
     init {
         planeBitmap = BitmapFactory.decodeResource(resources, R.drawable.airplane_white_48dp)
