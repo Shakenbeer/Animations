@@ -34,10 +34,14 @@ In the same time, if you don't want to see anything (line in this case) behind t
 And, don't forget to set software layer type to your view, in other case PorterDuffXfermode with make background black.
 
 ```kotlin
-    planeBitmap = BitmapFactory.decodeResource(resources, R.drawable.airplane_white_48dp)
-    planePaint.colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN)
-    planePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC)
-    setLayerType(LAYER_TYPE_SOFTWARE, null)
+    private val planeBitmap: Bitmap
+    //...
+    init {
+        planeBitmap = BitmapFactory.decodeResource(resources, R.drawable.airplane_white_48dp)
+        planePaint.colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN)
+        planePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC)
+        setLayerType(LAYER_TYPE_SOFTWARE, null)
+    }
 ```
 
 Read more about [PorterDuff.Mode](https://developer.android.com/reference/android/graphics/PorterDuff.Mode)
