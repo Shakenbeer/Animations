@@ -1,4 +1,4 @@
-So, I've decided to improve my animations. Here is the first one, for my biathlon pet-project.
+_So, I've decided to improve my animations. Here is the first one, for my biathlon pet-project._
 
 ### Biathlon target
 
@@ -19,7 +19,7 @@ Use [AnimatorSet](https://developer.android.com/reference/android/animation/Anim
     }
 ```
 
-And here is the second one, could be loading indicator for flights booking app. Try it, in real life it looks smooth, somehow converting to GIF makes it uglier.
+_And here is the second one, could be loading indicator for flights booking app. Try it, in real life it looks smooth, somehow converting to GIF makes it uglier._
 
 ### Flight
 
