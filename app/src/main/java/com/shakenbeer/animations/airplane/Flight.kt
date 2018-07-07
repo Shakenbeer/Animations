@@ -79,6 +79,7 @@ class Flight @JvmOverloads constructor(
     override fun onDetachedFromWindow() {
         super.onDetachedFromWindow()
         anim?.cancel()
+        planeBitmap.recycle()
     }
 
     companion object {
