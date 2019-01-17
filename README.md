@@ -31,7 +31,7 @@ To tint bitmap but keep transparent background - use [PorterDuffColorFilter](htt
 
 In the same time, if you don't want to see anything (line in this case) behind transparent background - use [PorterDuffXfermode](https://developer.android.com/reference/android/graphics/PorterDuffXfermode)
 
-And, don't forget to set software layer type to your view, in other case PorterDuffXfermode with make background black.
+And, don't forget to set software layer type to your view, in other case PorterDuffXfermode will make background black.
 
 ```kotlin
     private val planeBitmap: Bitmap
@@ -46,3 +46,16 @@ And, don't forget to set software layer type to your view, in other case PorterD
 ```
 
 Read more about [PorterDuff.Mode](https://developer.android.com/reference/android/graphics/PorterDuff.Mode)
+
+
+_I've found next animation on [uplabs.com](https://www.uplabs.com/posts/checkbox-loader), [Roy Tan](https://www.uplabs.com/royrt88) implemented it with CSS and JS, I've decided to try animated vector drawable._
+
+### Checkbox loader
+
+![target](https://github.com/Shakenbeer/Animations/blob/master/checkbox_loader.gif)
+
+**Further reading:**
+
+Whole work could be done in a single xml file, you need kotlin (java) only to start animation. Read more: [Vector drawables overview](https://developer.android.com/guide/topics/graphics/vector-drawable-resources), [AnimatedVectorDrawable](https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable)
+
+This example was inspired by [Nick Butcher](https://medium.com/@crafty)'s series on vector assets in Android.
