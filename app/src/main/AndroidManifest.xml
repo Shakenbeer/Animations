@@ -26,6 +26,8 @@
             android:label="Biathlon Target" />
         <activity android:name=".airplane.FlightActivity"
             android:label="Flight"/>
+        <activity android:name=".checkboxloader.CheckboxLoaderActivity"
+            android:label="Checkbox Loader"/>
     </application>
 
 </manifest>

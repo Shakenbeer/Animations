@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.shakenbeer.animations.airplane.FlightActivity
 import com.shakenbeer.animations.biathlon.BiathlonActivity
+import com.shakenbeer.animations.checkboxloader.CheckboxLoaderActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         }
         flightTextView.setOnClickListener {
             startActivity(Intent(this@MainActivity, FlightActivity::class.java))
+        }
+        checkboxLoaderTextView.setOnClickListener {
+            startActivity(Intent(this@MainActivity, CheckboxLoaderActivity::class.java))
         }
     }
 }
