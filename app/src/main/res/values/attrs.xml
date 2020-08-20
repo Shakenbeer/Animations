@@ -4,4 +4,14 @@
         <attr name="color" format="color" />
         <attr name="duration" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="ProgressRing">
+        <attr name="progress" format="float"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="progressBackgroundColor" format="color"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="rounded" format="boolean"/>
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="glowColor" format="color"/>
+    </declare-styleable>
 </resources>

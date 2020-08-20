@@ -2,7 +2,7 @@ package com.shakenbeer.animations.checkboxloader
 
 import android.graphics.drawable.AnimatedVectorDrawable
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.text.util.Linkify
 import com.shakenbeer.animations.R
 import kotlinx.android.synthetic.main.activity_checkbox_loader.*

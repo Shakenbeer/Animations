@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".progressring.ProgressRingActivity">
+
+    <com.shakenbeer.animations.progressring.ProgressRing
+        android:id="@+id/progressRing"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:glowColor="#197163"
+        app:layout_constraintBottom_toTopOf="@+id/progressRing2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="0"
+        app:progressBackgroundColor="@android:color/darker_gray"
+        app:progressDrawable="@drawable/progress_gradient"
+        app:progressWidth="10dp"
+        app:rounded="true" />
+
+    <com.shakenbeer.animations.progressring.ProgressRing
+        android:id="@+id/progressRing2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:glowColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressRing"
+        tools:progress="75"
+        app:progressColor="@android:color/white"
+        app:progressBackgroundColor="#80000000"
+        app:progressWidth="10dp"
+        app:rounded="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

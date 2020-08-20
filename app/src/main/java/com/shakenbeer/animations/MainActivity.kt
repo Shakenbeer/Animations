@@ -2,10 +2,11 @@ package com.shakenbeer.animations
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.shakenbeer.animations.airplane.FlightActivity
 import com.shakenbeer.animations.biathlon.BiathlonActivity
 import com.shakenbeer.animations.checkboxloader.CheckboxLoaderActivity
+import com.shakenbeer.animations.progressring.ProgressRingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         }
         checkboxLoaderTextView.setOnClickListener {
             startActivity(Intent(this@MainActivity, CheckboxLoaderActivity::class.java))
+        }
+        progressRingTextView.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ProgressRingActivity::class.java))
         }
     }
 }

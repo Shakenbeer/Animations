@@ -3,4 +3,5 @@
     <string name="biathlon_target_animation">1. Biathlon Target Animation</string>
     <string name="flight_animation">2. Flight Animation</string>
     <string name="checkbox_loader_animation">3. Checkbox Loader Animation</string>
+    <string name="progress_ring">4. Progress Ring</string>
 </resources>

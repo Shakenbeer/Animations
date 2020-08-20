@@ -59,3 +59,17 @@ _I've found next animation on [uplabs.com](https://www.uplabs.com/posts/checkbox
 Whole work could be done in a single xml file, you need kotlin (java) only to start animation. Read more: [Vector drawables overview](https://developer.android.com/guide/topics/graphics/vector-drawable-resources), [AnimatedVectorDrawable](https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable)
 
 This example was inspired by [Nick Butcher](https://medium.com/@crafty)'s series on vector assets in Android.
+
+### Progress Ring
+
+![target](https://github.com/Shakenbeer/Animations/blob/master/progress_ring.gif)
+
+**Pro-tips:**
+
+When you are using PorterDuff, everything, what is already on a canvas, is considered as destination. To separate progress background and use only progress itself as destination (e.g. as mask for a gradient), one could use `Canvas.saveLayer()` and `canvas.restore`
+
+Glow effect is reachable simply with `Paint.setShadowLayer()`
+
+**Further reading:**
+
+This example is compilation of [A glowing progress ring with rounded ends for Android](https://medium.com/glose-team/a-glowing-progress-ring-with-rounded-ends-for-android-865eb0161cc1) and [this answer on SO](https://stackoverflow.com/questions/36639660/android-circular-progress-bar-with-rounded-corners/53830379#53830379)
