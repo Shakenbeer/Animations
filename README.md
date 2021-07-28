@@ -1,4 +1,4 @@
-_So, I've decided to improve my animations. Here is the first one, for my biathlon pet-project._
+_So, I've decided to improve my animations._
 
 ### Compose Pager
 
