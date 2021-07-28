@@ -66,5 +66,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkboxLoaderTextView" />
 
+    <TextView
+        android:id="@+id/composePagerTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/compose_pager"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressRingTextView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
+        <activity
+            android:name=".composeowls.BabalexActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,9 +37,9 @@
         <activity
             android:name=".checkboxloader.CheckboxLoaderActivity"
             android:label="Checkbox Loader" />
-
-        <activity android:name=".progressring.ProgressRingActivity"
-            android:label="Progress Ring"/>
+        <activity
+            android:name=".progressring.ProgressRingActivity"
+            android:label="Progress Ring" />
     </application>
 
 </manifest>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.shakenbeer.animations.airplane.FlightActivity
 import com.shakenbeer.animations.biathlon.BiathlonActivity
 import com.shakenbeer.animations.checkboxloader.CheckboxLoaderActivity
+import com.shakenbeer.animations.composeowls.BabalexActivity
 import com.shakenbeer.animations.progressring.ProgressRingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
         progressRingTextView.setOnClickListener {
             startActivity(Intent(this@MainActivity, ProgressRingActivity::class.java))
+        }
+        composePagerTextView.setOnClickListener {
+            startActivity(Intent(this@MainActivity, BabalexActivity::class.java))
         }
     }
 }

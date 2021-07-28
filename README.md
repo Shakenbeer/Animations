@@ -1,5 +1,14 @@
 _So, I've decided to improve my animations. Here is the first one, for my biathlon pet-project._
 
+### Compose Pager
+
+![target](https://github.com/Shakenbeer/Animations/blob/master/owls.gif)
+
+**Pro-tips:**
+
+I've implemented such behavior few years ago with RecyclerView. Compose code take much less space. But it's really hard to find out, how to do it with compose. 
+[Pager from accompanist](https://google.github.io/accompanist/pager/) is used. And there is [calculateCurrentOffsetForPage](https://google.github.io/accompanist/api/pager/pager/com.google.accompanist.pager/calculate-current-offset-for-page.html), that speaks for itself.
+
 ### Biathlon target
 
 ![target](https://github.com/Shakenbeer/Animations/blob/master/biathlon_target.gif)
