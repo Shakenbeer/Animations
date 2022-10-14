@@ -8,6 +8,7 @@ import com.shakenbeer.animations.biathlon.BiathlonActivity
 import com.shakenbeer.animations.checkboxloader.CheckboxLoaderActivity
 import com.shakenbeer.animations.composeowls.BabalexActivity
 import com.shakenbeer.animations.progressring.ProgressRingActivity
+import com.shakenbeer.animations.strikethru.StrikethruActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         composePagerTextView.setOnClickListener {
             startActivity(Intent(this@MainActivity, BabalexActivity::class.java))
+        }
+        composeStrikethruTextView.setOnClickListener {
+            startActivity(Intent(this@MainActivity, StrikethruActivity::class.java))
         }
     }
 }

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/biathlonTextView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -16,14 +16,11 @@
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/biathlon_target_animation"
-        android:textAppearance="?android:textAppearanceLarge"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="?android:textAppearanceLarge" />
 
     <TextView
         android:id="@+id/flightTextView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -31,14 +28,11 @@
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/flight_animation"
-        android:textAppearance="?android:textAppearanceLarge"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/biathlonTextView" />
+        android:textAppearance="?android:textAppearanceLarge" />
 
     <TextView
         android:id="@+id/checkboxLoaderTextView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -46,14 +40,11 @@
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/checkbox_loader_animation"
-        android:textAppearance="?android:textAppearanceLarge"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flightTextView" />
+        android:textAppearance="?android:textAppearanceLarge" />
 
     <TextView
         android:id="@+id/progressRingTextView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -61,14 +52,11 @@
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/progress_ring"
-        android:textAppearance="?android:textAppearanceLarge"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkboxLoaderTextView" />
+        android:textAppearance="?android:textAppearanceLarge" />
 
     <TextView
         android:id="@+id/composePagerTextView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -76,10 +64,19 @@
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/compose_pager"
-        android:textAppearance="?android:textAppearanceLarge"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressRingTextView" />
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/composeStrikethruTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/compose_strikethru"
+        android:textAppearance="?android:textAppearanceLarge" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

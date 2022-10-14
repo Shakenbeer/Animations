@@ -1,5 +1,15 @@
 _So, I've decided to improve my animations._
 
+### Compose Strikethrough Icon
+
+![target](https://github.com/Shakenbeer/Animations/blob/master/strikethru.gif)
+
+It's basically a copy-paste from a great article of Mark Allison: [Compose: Strikethru Animation](https://blog.stylingandroid.com/compose-strikethru-animation/)
+
+**Pro-tips:**
+
+If you want to draw on a Canvas as in good old days - ```DrawScope``` is you friend. Also, an animation progress should be a lambda, not a state -- more details on this in the article.
+
 ### Compose Pager
 
 ![target](https://github.com/Shakenbeer/Animations/blob/master/owls.gif)

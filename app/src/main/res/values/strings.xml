@@ -5,5 +5,5 @@
     <string name="checkbox_loader_animation">3. Checkbox Loader Animation</string>
     <string name="progress_ring">4. Progress Ring</string>
     <string name="compose_pager">5. Compose Pager</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="compose_strikethru">6. Compose Strikethru Icon</string>
 </resources>

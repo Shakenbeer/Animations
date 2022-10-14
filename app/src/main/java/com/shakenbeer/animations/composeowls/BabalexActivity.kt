@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import com.google.accompanist.pager.ExperimentalPagerApi
-import com.shakenbeer.animations.composeowls.ui.theme.AnimationsTheme
+import com.shakenbeer.animations.theme.AnimationsTheme
 
 class BabalexActivity : ComponentActivity() {
     @ExperimentalPagerApi
