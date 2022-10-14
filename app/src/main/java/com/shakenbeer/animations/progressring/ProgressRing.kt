@@ -1,21 +1,23 @@
 package com.shakenbeer.animations.progressring
 
-import android.animation.ValueAnimator
 import android.content.Context
 import android.content.res.Resources
-import android.graphics.*
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffXfermode
+import android.graphics.RectF
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
-import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.annotation.ColorInt
 import androidx.annotation.FloatRange
 import androidx.core.content.res.use
 import com.shakenbeer.animations.R
 import kotlin.math.min
-import kotlin.math.roundToLong
 
 /**
  * https://stackoverflow.com/a/53830379/276074

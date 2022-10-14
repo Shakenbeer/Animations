@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
 import android.animation.ValueAnimator
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Canvas
@@ -14,6 +15,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.view.animation.LinearInterpolator
 
+@SuppressLint("Recycle")
 class BiathlonTarget @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
@@ -85,7 +87,7 @@ class BiathlonTarget @JvmOverloads constructor(
                     anim.duration = openingMillis
                     anim.interpolator = LinearInterpolator()
                     anim.addUpdateListener {
-                        for (j in 0 until lidCenters.size) {
+                        for (j in lidCenters.indices) {
                             lidCenters[j] = lidCenters[j].copy(second = it.animatedValue as Float)
                         }
                         invalidate()
@@ -97,7 +99,7 @@ class BiathlonTarget @JvmOverloads constructor(
 
         animatorSet.startDelay = delayMillis
         animatorSet.addListener(object : AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(animation: Animator) {
                 if (isAnimating) {
                     animatorSet.start()
                 }
@@ -134,7 +136,7 @@ class BiathlonTarget @JvmOverloads constructor(
 
     private fun startAnimation() {
         isAnimating = true
-        for (i in 0 until lidCenters.size) {
+        for (i in lidCenters.indices) {
             lidCenters[i] = Pair(((gap + d / 2) * (i + 1) + (d / 2) * i).toFloat(), lidCenterY)
         }
         val list = animations as List<Animator>?

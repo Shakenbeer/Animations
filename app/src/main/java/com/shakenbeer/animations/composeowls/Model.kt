@@ -1,6 +1,5 @@
 package com.shakenbeer.animations.composeowls
 
-import androidx.annotation.DrawableRes
 import com.shakenbeer.animations.R
 
 interface Bird {
