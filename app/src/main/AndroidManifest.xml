@@ -38,6 +38,9 @@
         <activity
             android:name=".strikethru.StrikethruActivity"
             android:label="Strike Through"/>
+        <activity
+            android:name=".blur.ComposeBlurActivity"
+            android:label="Compose Blur"/>
     </application>
 
 </manifest>

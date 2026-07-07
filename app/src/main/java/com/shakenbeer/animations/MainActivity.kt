@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.shakenbeer.animations.airplane.FlightActivity
 import com.shakenbeer.animations.biathlon.BiathlonActivity
+import com.shakenbeer.animations.blur.ComposeBlurActivity
 import com.shakenbeer.animations.checkboxloader.CheckboxLoaderActivity
 import com.shakenbeer.animations.composeowls.BabalexActivity
 import com.shakenbeer.animations.progressring.ProgressRingActivity
@@ -34,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<TextView>(R.id.composeStrikethruTextView).setOnClickListener {
             startActivity(Intent(this@MainActivity, StrikethruActivity::class.java))
+        }
+        findViewById<TextView>(R.id.composeBlurTextView).setOnClickListener {
+            startActivity(Intent(this@MainActivity, ComposeBlurActivity::class.java))
         }
     }
 }
