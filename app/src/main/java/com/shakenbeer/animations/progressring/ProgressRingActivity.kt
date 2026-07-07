@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AccelerateDecelerateInterpolator
 import com.shakenbeer.animations.R
-import kotlinx.android.synthetic.main.activity_progress_ring.*
 
 class ProgressRingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +15,7 @@ class ProgressRingActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        with(progressRing) {
+        findViewById<ProgressRing>(R.id.progressRing).apply {
             setProgress(0f)
             ValueAnimator.ofFloat(0f, 200f).apply {
                 duration = 2000
@@ -30,7 +29,7 @@ class ProgressRingActivity : AppCompatActivity() {
             }
         }
 
-        with(progressRing2) {
+        findViewById<ProgressRing>(R.id.progressRing2).apply {
             setProgress(0f)
             ValueAnimator.ofFloat(75f, 150f).apply {
                 duration = 1000
