@@ -39,7 +39,7 @@
             android:name=".strikethru.StrikethruActivity"
             android:label="Strike Through"/>
         <activity
-            android:name=".blur.ComposeBlurActivity"
+            android:name=".blur.ComposeGlowActivity"
             android:label="Compose Blur"/>
     </application>
 

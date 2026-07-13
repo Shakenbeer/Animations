@@ -6,5 +6,5 @@
     <string name="progress_ring">4. Progress Ring</string>
     <string name="compose_pager">5. Compose Pager</string>
     <string name="compose_strikethru">6. Compose Strikethru Icon</string>
-    <string name="compose_blur">7. Compose Blur</string>
+    <string name="compose_blur">7. Compose Glow</string>
 </resources>
